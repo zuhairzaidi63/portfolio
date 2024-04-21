@@ -141,6 +141,59 @@
             background-color: #18d26e;
             transition: width 0.9s ease-in-out; /* Add animation */
         }
+        #Project{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Projects{
+            display:flex;
+            background-color: #0a0a10;
+            border-radius: 56px;
+            div{
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 4em;
+            }
+        }
+        #try{
+            margin-left: 10em;
+        }
+        .type {
+            display:inline-block;
+          }
+          .type > span {
+            display:grid;
+            overflow: hidden;
+            height:1.4em;
+          }
+          .type span span {
+            width:0%;
+            max-width:max-content;
+            overflow: hidden;
+            height:inherit;
+            word-break:break-all;
+            animation:
+              c 0.5s infinite steps(1),  
+              t 2s linear infinite alternate,
+              m 12s steps(3) infinite;
+          }
+          .type span span:before {
+            content:" ";
+            display:inline-block;
+          }
+          @keyframes t{
+            90%,100% {width:100%}
+          }
+          @keyframes c{
+            0%,100%{box-shadow:5px 0 0 #0000}
+            50%    {box-shadow:5px 0 0 red  }
+          }
+          @keyframes m{
+            100% {transform:translateY(-300%)}
+          }
     </style>
 </head>
 <body>
@@ -155,7 +208,7 @@
             <a href="#About"><p>About</p></a>
             <a href="#skilling"><p>Skills</p></a>
             <!-- <a href="#About"><p>Portfolio</p></a> -->
-            <a href="#About"><p>Contact</p></a>
+            <a href="#Project"><p>Project</p></a>
         </nav>
     </header>
     <main id="Home">
@@ -163,6 +216,15 @@
         <div>
         <p>Computer Scientist</p>
         <h1>Hi,I am <span style="color:red">Zuhair</span> </h1>
+        <div id="try">
+        <span style="font-size:40px;color:white">I am</span> <span class="type" style="font-size:40px;">
+            <span style="color:red;">
+              <span>a Software engineer</span>
+              <span>a Python Developer</span>
+              <span>an AI enthusiast</span>
+            </span>
+          </span>
+        </div>
         </div>
         <img src="my.png" alt="pic" width="400" height="500" id="mypic">
     </div>
@@ -268,7 +330,74 @@
             </div> 
         </div>    
     </div>
-    
+    <h1 style="font-size: 30px;margin-left:2em;">Project<br></h1>
+    <br>
+    <div id="Project">
+          <div class="Projects" style="color:white;width:50%">
+              <div>
+              <h1>Candy Crush</h1>
+              <br>
+
+              <p style="color:grey">Candy crush  is a console based game. <br>It was done in C++ to get good grip on fundamentles.</p>
+            </div>
+              <img src="candycrush.png" alt="pic" width="200" height="300" id="mypic">
+          </div>
+          <br>
+          <br>
+          <div class="Projects" style="color:white;width:50%">
+            <div>
+            <h1>Contact Book</h1>
+            <br>
+
+            <p style="color:grey">Contact Book  is a console based project. <br>It was done to test OOP skill.</p>
+          </div>
+            <img src="Contact book.png" alt="pic" width="200" height="300" id="mypic">
+        </div>
+        <br>
+        <br>
+        <div class="Projects" style="color:white;width:50%">
+            <div>
+            <h1>Snake Game</h1>
+            <br>
+
+            <p style="color:grey">Snake game was developed in assembly language. Make us able to think about programing from first principle</p>
+          </div>
+            <img src="snake.png" alt="pic" width="200" height="300" id="mypic">
+        </div>
+        <br>
+        <br>
+        <div class="Projects" style="color:white;width:50%">
+            <div>
+            <h1>Notebook</h1>
+            <br>
+
+            <p style="color:grey">Notebook was developed for data structure project. I use trie tree algo to approach this project</p>
+          </div>
+            <img src="notebook.png" alt="pic" width="200" height="300" id="mypic">
+        </div>
+        <br>
+        <br>
+        <div class="Projects" style="color:white;width:50%">
+            <div>
+            <h1>Israiel-Palestine data anaylysis</h1>
+            <br>
+
+            <p style="color:grey">Our stats project done in python. We analyse and visualize casualities from 2001-2023</p>
+          </div>
+            <img src="israel.png" alt="pic" width="200" height="300" id="mypic">
+        </div>
+        <br>
+        <br>
+        <div class="Projects" style="color:white;width:50%">
+            <div>
+            <h1>Os simulator</h1>
+            <br>
+
+            <p style="color:grey">By using C we simulate operating system its kernel and run many programs parallel</p>
+          </div>
+            <img src="os.png" alt="pic" width="200" height="300" id="mypic">
+        </div>
+    </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         // Get the element with class 'skills-content'
