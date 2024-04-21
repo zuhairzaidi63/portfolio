@@ -284,6 +284,36 @@
                 margin-bottom: 10em; /* Increase margin-bottom for About section */
             }
         }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .line {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            @media (max-width: 768px) {
+                nav {
+                    display: none; /* Hide navigation links by default on smaller screens */
+                }
+            
+                .hamburger-menu {
+                    display: block; /* Show hamburger menu on smaller screens */
+                }
+            
+                nav.open {
+                    display: flex;
+                    background-color:#0a0a10 /* Show navigation links when 'open' class is added */
+                }
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -300,6 +330,11 @@
             <!-- <a href="#About"><p>Portfolio</p></a> -->
             <a href="#Project"><p>Project</p></a>
         </nav>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
     <main id="Home">
     <div class="container1">
@@ -514,6 +549,13 @@
                 }
             });
         }
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    });
+
     </script>
 
 </body>
