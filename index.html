@@ -194,6 +194,96 @@
           @keyframes m{
             100% {transform:translateY(-300%)}
           }
+          @media (max-width: 940px) {
+            main {
+                img{
+                    display:none;
+                }
+                flex-direction: column;
+
+            }
+            main{
+                height:80vh
+            }
+            main p {
+                margin-top: 2em; /* Adjust margin for smaller screens */
+                margin-left: 0; /* Remove left margin */
+                text-align: center; /* Center-align text */
+            }
+        }
+        @media (max-width: 991.5px) {
+            #skilling{
+                margin-bottom: 20em;
+            }
+        }
+
+          @media (max-width: 830px) {
+            
+            main {
+                img{
+                    display:none;
+                }
+                flex-direction: column;
+
+            }
+            main{
+                height:80vh
+            }
+            #seperator{
+                margin-top:23em
+            }
+            #mypic {
+                margin-left: 0;
+                margin-top: 2em; /* Adjust margin for smaller screens */
+                width: 100%; /* Make the image full width */
+            }
+            #About{
+                margin-bottom:8em;
+                margin-top:23em;
+                img{
+                    margin-left:0;
+                    margin-right:1em;
+                }
+            }
+            main p {
+                margin-top: 2em; /* Adjust margin for smaller screens */
+                margin-left: 0; /* Remove left margin */
+                text-align: center; /* Center-align text */
+            }
+
+            .container1 {
+                 flex-direction: column; 
+            }
+
+            #cont1 img {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #cont2 {
+                text-align: center;
+            }
+
+            .Projects {
+                flex-direction: column;
+                margin-left: 0;
+                margin-top: 60px;
+            }
+
+            .Projects img {
+                width: 80%; /* Make project images 80% width */
+            }
+            
+            .separator {
+                height: 2em; /* Increase separator height */
+            }
+            #skilling{
+                margin-bottom: 20em;
+            }
+            #About {
+                margin-bottom: 10em; /* Increase margin-bottom for About section */
+            }
+        }
     </style>
 </head>
 <body>
@@ -226,7 +316,7 @@
           </span>
         </div>
         </div>
-        <img src="my.png" alt="pic" width="400" height="500" id="mypic">
+        <img id="zuhair" src="my.png" alt="pic" width="400" height="500" id="mypic">
     </div>
         <!-- width="500" height="600" -->
     </main>
@@ -239,7 +329,7 @@
         </div>
         <div id="cont2" style="color:white;" >
             <h1 style="font-size:50px">About me</h1>
-            <p style="width:50%">Greetings! I'm Zuhair, a computer science enthusiast driven by the desire to leverage technology for meaningful societal change. My expertise lies in the MERN stack, C/C++, SQL, and Python, cultivated through a combination of academic achievements and practical projects. I am fascinated by the boundless possibilities of Large Language Models in Generative AI and automation, and I am keen to delve deeper into their revolutionary implications. Additionally, I am intrigued by the intersection of deep learning, machine learning, and their potential to reshape our world, approaching these fields with a foundational understanding and a thirst for innovation.<br><br></p>
+            <p style="width:60%">Greetings! I'm Zuhair, a computer science enthusiast driven by the desire to leverage technology for meaningful societal change. My expertise lies in the MERN stack, C/C++, SQL, and Python, cultivated through a combination of academic achievements and practical projects. I am fascinated by the boundless possibilities of Large Language Models in Generative AI and automation, and I am keen to delve deeper into their revolutionary implications. Additionally, I am intrigued by the intersection of deep learning, machine learning, and their potential to reshape our world, approaching these fields with a foundational understanding and a thirst for innovation.<br><br></p>
         </div>
     </div>
     <div id="skilling"style="width:100%;height:70vh">
